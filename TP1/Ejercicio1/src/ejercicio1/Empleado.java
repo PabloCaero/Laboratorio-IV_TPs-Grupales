@@ -3,7 +3,7 @@ package ejercicio1;
 public class Empleado {
 
 	//ATRIBUTOS - CONCEPTO DE ENCAPSULACIÓN
-		private final int id; // EL FINAL EVITA QUE SE MODIFIQUE EL ID MANUALMENTE
+		private int id; // EL FINAL EVITA QUE SE MODIFIQUE EL ID MANUALMENTE
 		private String nombre;
 		private int edad;
 	    private  static int cont =999;// INCREMENTA DE A 1 EN 1  LOS ID PARA GENERAR EL ID AUTOMATICAMENTE
@@ -47,6 +47,13 @@ public class Empleado {
 			this.edad = edad;
 		}
 		
+	// Punto 6
+		
+		public static String devuelveProximoID() 
+		{
+			int aux = cont+1;
+			return "El proximo empleado: " + aux;
+		}
 		
 	//METODO toString()	
 		public String toString() {
