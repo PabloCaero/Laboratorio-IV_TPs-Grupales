@@ -3,11 +3,10 @@ package ejercicio1;
 public class Empleado {
 
 	//ATRIBUTOS - CONCEPTO DE ENCAPSULACIÓN
-		private  int id;
+		private final int id; // EL FINAL EVITA QUE SE MODIFIQUE EL ID MANUALMENTE
 		private String nombre;
 		private int edad;
-	
-	    private  static int cont =999;// INCREMENTA DE A 1 EN 1  LOS ID /PARA GENERAR EL ID AUTOMATICAMENTE
+	    private  static int cont =999;// INCREMENTA DE A 1 EN 1  LOS ID PARA GENERAR EL ID AUTOMATICAMENTE
 		
 	//CONSTRUCTORES
 		public Empleado()
@@ -15,7 +14,7 @@ public class Empleado {
 	    cont++;
 		this.id= cont;
 		this.nombre ="Sin nombre";
-		this.edad = 0 ;
+		this.edad = 99 ;
 		
 		}
 		
