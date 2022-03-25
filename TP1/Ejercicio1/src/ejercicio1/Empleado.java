@@ -3,11 +3,30 @@ package ejercicio1;
 public class Empleado {
 
 	//ATRIBUTOS - CONCEPTO DE ENCAPSULACIÓN
-		private int id;
+		private  int id;
 		private String nombre;
 		private int edad;
-		private static int cont = 1000; //PARA GENERAR EL ID AUTOMATICAMENTE
 	
+	    private  static int cont =999;// INCREMENTA DE A 1 EN 1  LOS ID /PARA GENERAR EL ID AUTOMATICAMENTE
+		
+	//CONSTRUCTORES
+		public Empleado()
+		{
+	    cont++;
+		this.id= cont;
+		this.nombre ="Sin nombre";
+		this.edad = 0 ;
+		
+		}
+		
+		public Empleado(String nombre,int edad) 
+		{
+			cont++;
+			this.id=   cont;
+			this.nombre =nombre;
+			this.edad = edad;
+			
+		}
 		
 	//GETTERS Y SETTERS
 		public int getId() {
@@ -32,7 +51,7 @@ public class Empleado {
 		
 	//METODO toString()	
 		public String toString() {
-			return "ID = " + id + ", NOMBRE = " + nombre + ", EDAD =" + edad;
+			return "ID = " + id + ", NOMBRE = " + nombre + ", EDAD = " + edad ;
 		}
 		
 }
