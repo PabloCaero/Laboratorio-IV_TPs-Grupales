@@ -52,7 +52,7 @@ public class Empleado {
 		public static String devuelveProximoID() 
 		{
 			int aux = cont+1;
-			return "El proximo empleado: " + aux;
+			return "El ID del proximo empleado es: " + aux;
 		}
 		
 	//METODO toString()	
