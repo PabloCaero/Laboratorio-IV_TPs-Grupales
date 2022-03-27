@@ -7,7 +7,7 @@ public class Empleado {
 			private final int id; // EL FINAL EVITA QUE SE MODIFIQUE EL ID MANUALMENTE
 			private String nombre;
 			private int edad;
-		    private  static int cont =999;// VARIABLE QUE PERMITE QUE LOS  ID ARRANQUEN  EN 1000
+		    private static int cont =999;// VARIABLE QUE PERMITE QUE LOS  ID ARRANQUEN  EN 1000
 			
 		//CONSTRUCTORES
 		    
