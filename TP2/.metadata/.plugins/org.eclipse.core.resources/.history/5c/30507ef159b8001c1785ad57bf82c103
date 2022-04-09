@@ -1,0 +1,42 @@
+package ejercicio1;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class mainEjercicio1_b {
+
+	public static void main(String[] args) {
+		
+		
+		TreeSet<Profesor> listaProfesor = new TreeSet<Profesor>();
+		
+		Profesor p1 = new Profesor("Profesor", 10);
+		Profesor p2 = new Profesor("Profesor", 11);
+		Profesor p3 = new Profesor("Profesor", 5);
+		Profesor p4 = new Profesor("Profesor", 4);
+		Profesor p5= new Profesor("Profesor", 9);
+		Profesor p6 = new Profesor("Profesor", 1);
+		
+		ArrayList<Profesor> listaProfesor1 = new ArrayList<Profesor>();
+	
+		listaProfesor1.add(p1);
+		listaProfesor1.add(p6);
+		listaProfesor1.add(p2);
+		listaProfesor1.add(p3);
+		listaProfesor1.add(p4);
+		listaProfesor1.add(p5);
+		
+		
+		
+		Iterator<Profesor> it = listaProfesor1.iterator();
+		while(it.hasNext())
+		{
+			Profesor p = (Profesor) it.next();
+			System.out.println(p.toString());
+		}
+
+		
+		
+	}
+}
