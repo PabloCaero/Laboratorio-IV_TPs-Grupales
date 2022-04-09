@@ -7,7 +7,7 @@ public class Empleado {
 			private final int id; // EL FINAL EVITA QUE SE MODIFIQUE EL ID MANUALMENTE
 			private String nombre;
 			private int edad;
-		    private  static int cont =999;// VARIABLE QUE PERMITE QUE LOS  ID ARRANQUEN  EN 1000
+		    private static int cont =999;// VARIABLE QUE PERMITE QUE LOS  ID ARRANQUEN  EN 1000
 			
 		//CONSTRUCTORES
 		    
@@ -59,7 +59,7 @@ public class Empleado {
 		public static String devuelveProximoID() 
 		{
 			int aux = cont+1;
-			return "El proximo empleado: " + aux;
+			return "El ID del proximo empleado es: " + aux;
 		}
 		
 	//METODO toString()	(PUNTO 7)
